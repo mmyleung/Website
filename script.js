@@ -34,9 +34,12 @@ function nextPage() {
     const pageOneMessage = document.createElement("div");
     pageOneMessage.innerHTML = "I was born in Hong Kong many moons ago (guess which one is me)";
     displayContainer.appendChild(pageOneMessage);
+    const imgContainer = document.createElement("div");
+    imgContainer.setAttribute("class","imgContainer");
     const pageOneImage = document.createElement("img");
     pageOneImage.src = "baby1.jpg";
-    displayContainer.appendChild(pageOneImage);
+    imgContainer.appendChild(pageOneImage);
+    displayContainer.appendChild(imgContainer);
     const nextBtn2 = document.createElement("button");
     nextBtn2.innerHTML = "Continue";
     displayContainer.appendChild(nextBtn2);
