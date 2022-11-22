@@ -49,14 +49,41 @@ function nextPage() {
 function nextPage2() {
     removeChildren();
     const pageTwoMessage = document.createElement("div");
-    pageOneMessage.innerHTML = "Fast forward 24 years - I became a dentist!";
-    displayContainer.appendChild(pageOneMessage);
-    const pageOneImage = document.createElement("img");
-    pageOneImage.src = "baby1.jpg";
-    displayContainer.appendChild(pageOneImage);
-    const nextBtn2 = document.createElement("button");
-    nextBtn2.innerHTML = "Continue";
-    displayContainer.appendChild(nextBtn2);
-    nextBtn2.addEventListener("click", nextPage2);
+    pageTwoMessage.innerHTML = "Fast forward 24 years - I qualified a dentist!";
+    displayContainer.appendChild(pageTwoMessage);
+    const pageTwoImage = document.createElement("img");
+    pageTwoImage.src = "grad.jpg";
+    displayContainer.appendChild(pageTwoImage);
+    const nextBtn3 = document.createElement("button");
+    nextBtn3.innerHTML = "Continue";
+    displayContainer.appendChild(nextBtn3);
+    nextBtn3.addEventListener("click", nextPage3);
 }
 
+function nextPage3() {
+    removeChildren();
+    const pageThreeMessage = document.createElement("div");
+    pageThreeMessage.innerHTML = "During COVID-19, I discovered how fun coding can be (Not so much for my cat!) </br> I've also realised that I wanted more flexibility with my work and career.";
+    displayContainer.appendChild(pageThreeMessage);
+    const pageThreeImage = document.createElement("img");
+    pageThreeImage.src = "laptop.jpeg";
+    displayContainer.appendChild(pageThreeImage);
+    const nextBtn4 = document.createElement("button");
+    nextBtn4.innerHTML = "Continue";
+    displayContainer.appendChild(nextBtn4);
+    nextBtn4.addEventListener("click", nextPage4);
+}
+
+function nextPage4() {
+    removeChildren();
+    const pageFourMessage = document.createElement("div");
+    pageFourMessage.innerHTML = "These are some of the projects I've been working on:";
+    displayContainer.appendChild(pageThreeMessage);
+    const pageThreeImage = document.createElement("img");
+    pageThreeImage.src = "laptop.jpeg";
+    displayContainer.appendChild(pageThreeImage);
+    const nextBtn4 = document.createElement("button");
+    nextBtn4.innerHTML = "Continue";
+    displayContainer.appendChild(nextBtn4);
+    nextBtn4.addEventListener("click", nextPage4);
+}
