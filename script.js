@@ -49,7 +49,7 @@ function nextPage() {
 function nextPage2() {
     removeChildren();
     const pageTwoMessage = document.createElement("div");
-    pageTwoMessage.innerHTML = "Fast forward 24 years - I qualified a dentist!";
+    pageTwoMessage.innerHTML = "Fast forward 24 years - I qualified as a dentist!";
     displayContainer.appendChild(pageTwoMessage);
     const pageTwoImage = document.createElement("img");
     pageTwoImage.src = "grad.jpg";
@@ -78,12 +78,21 @@ function nextPage4() {
     removeChildren();
     const pageFourMessage = document.createElement("div");
     pageFourMessage.innerHTML = "These are some of the projects I've been working on:";
-    displayContainer.appendChild(pageThreeMessage);
-    const pageThreeImage = document.createElement("img");
-    pageThreeImage.src = "laptop.jpeg";
-    displayContainer.appendChild(pageThreeImage);
-    const nextBtn4 = document.createElement("button");
-    nextBtn4.innerHTML = "Continue";
-    displayContainer.appendChild(nextBtn4);
-    nextBtn4.addEventListener("click", nextPage4);
+    displayContainer.appendChild(pageFourMessage);
+    const projectContainer = document.createElement("div");
+    projectContainer.setAttribute("id","projectContainer");
+    const projectOneContainer = document.createElement("div");
+    const projectOneTitle = document.createElement("p");
+    const projectOneLink = document.createElement("a");
+    const projectOneImg = document.createElement("img");
+    projectOneImg.src = "Project1.png"
+    projectOneTitle.innerHTML = "Hobby Page";
+    projectOneLink.href
+    anchorTag.appendChild(projectOneLink);
+    projectOneContainer.appendChild(projectOneTitle);
+    projectOneContainer.appendChild(projectOneImg);
+    projectContainer.appendChild(projectOneContainer);
+    displayContainer.appendChild(projectContainer);
+    
+
 }
