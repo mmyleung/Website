@@ -99,7 +99,7 @@ function nextPage4() {
     const projectTwoTitle = document.createElement("p");
     const anchorTagTwo = document.createElement("a");
     const projectTwoImg = document.createElement("img");
-    projectTwoImg.src = //"Project2.png"
+    projectTwoImg.src = "Project2.png"
     projectTwoTitle.innerHTML = "Project Gallery";
     anchorTagTwo.href = "https://mmyleung.github.io/Project-Gallery/projectGallery.html";
     anchorTagTwo.innerHTML = "Link to my project";
