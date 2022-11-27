@@ -83,16 +83,69 @@ function nextPage4() {
     projectContainer.setAttribute("id","projectContainer");
     const projectOneContainer = document.createElement("div");
     const projectOneTitle = document.createElement("p");
-    const projectOneLink = document.createElement("a");
+    const anchorTag = document.createElement("a");
     const projectOneImg = document.createElement("img");
     projectOneImg.src = "Project1.png"
     projectOneTitle.innerHTML = "Hobby Page";
-    projectOneLink.href
-    anchorTag.appendChild(projectOneLink);
+    anchorTag.href = "https://mmyleung.github.io/Hobby-Page/hobbypage.html";
+    anchorTag.innerHTML = "Link to my project";
     projectOneContainer.appendChild(projectOneTitle);
     projectOneContainer.appendChild(projectOneImg);
+    projectOneContainer.appendChild(anchorTag);
     projectContainer.appendChild(projectOneContainer);
-    displayContainer.appendChild(projectContainer);
-    
 
+    
+    const projectTwoContainer = document.createElement("div");
+    const projectTwoTitle = document.createElement("p");
+    const anchorTagTwo = document.createElement("a");
+    const projectTwoImg = document.createElement("img");
+    projectTwoImg.src = //"Project2.png"
+    projectTwoTitle.innerHTML = "Project Gallery";
+    anchorTagTwo.href = "https://mmyleung.github.io/Project-Gallery/projectGallery.html";
+    anchorTagTwo.innerHTML = "Link to my project";
+    projectTwoContainer.appendChild(projectTwoTitle);
+    projectTwoContainer.appendChild(projectTwoImg);
+    projectTwoContainer.appendChild(anchorTagTwo);
+    projectContainer.appendChild(projectTwoContainer);
+
+    const projectThreeContainer = document.createElement("div");
+    const projectThreeTitle = document.createElement("p");
+    const anchorTagThree = document.createElement("a");
+    const projectThreeImg = document.createElement("img");
+    projectThreeImg.src = "Project3.png"
+    projectThreeTitle.innerHTML = "Comments Box";
+    anchorTagThree.href = "https://mmyleung.github.io/Comments-Box/commentBox.html";
+    anchorTagThree.innerHTML = "Link to my project";
+    projectThreeContainer.appendChild(projectThreeTitle);
+    projectThreeContainer.appendChild(projectThreeImg);
+    projectThreeContainer.appendChild(anchorTagThree);
+    projectContainer.appendChild(projectThreeContainer);
+
+    const projectFourContainer = document.createElement("div");
+    const projectFourTitle = document.createElement("p");
+    const anchorTagFour = document.createElement("a");
+    const projectFourImg = document.createElement("img");
+    projectFourImg.src = "Project4.png";
+    projectFourTitle.innerHTML = "Movie Data";
+    anchorTagFour.href = "https://mmyleung.github.io/Movie-Data/moviedata.html";
+    anchorTagFour.innerHTML = "Link to my project";
+    projectFourContainer.appendChild(projectFourTitle);
+    projectFourContainer.appendChild(projectFourImg);
+    projectFourContainer.appendChild(anchorTagFour);
+    projectContainer.appendChild(projectFourContainer);
+
+    const projectSixContainer = document.createElement("div");
+    const projectSixTitle = document.createElement("p");
+    const anchorTagSix = document.createElement("a");
+    const projectSixImg = document.createElement("img");
+    projectSixImg.src = "Project6.png"
+    projectSixTitle.innerHTML = "Javascript Feature";
+    anchorTagSix.href = "https://mmyleung.github.io/Javascript-Feature/index.html";
+    anchorTagSix.innerHTML = "Link to my project";
+    projectSixContainer.appendChild(projectSixTitle);
+    projectSixContainer.appendChild(projectSixImg);
+    projectSixContainer.appendChild(anchorTagSix);
+    projectContainer.appendChild(projectSixContainer);
+
+    displayContainer.appendChild(projectContainer);
 }

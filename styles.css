@@ -2,6 +2,9 @@ body, button, input {
     font-family: 'Courier New', Courier, monospace;
 }
 
+div {
+    margin:15px;
+}
 #displayContainer {
     width:100%;
     margin: 0 auto;
